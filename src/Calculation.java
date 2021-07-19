@@ -27,7 +27,7 @@ public class Calculation {
         Scanner input = new Scanner(System.in);
         System.out.println(" ========================================\n");
 
-        // Accepting the radius of the circle to be calculated.
+
         System.out.println("Please enter plane figure of your choice");
         int selection = input.nextInt();
         if(selection == 0){
@@ -45,6 +45,7 @@ public class Calculation {
         else if(selection==4){
             displayInstructionForSquare();
         }
+        else
         {
             System.out.println("Invalid input");
 
@@ -121,7 +122,7 @@ public class Calculation {
         System.out.println("The area of the triangle is " + calculateAreaOfTriangle( h,  b));
     }
     public static double calculateAreaOfTriangle( double h, double b){
-        double area = 1/2 * b* h;
+         double area = 1/2 * b* h;
         return area;
 
     }
@@ -160,7 +161,7 @@ public class Calculation {
         System.out.println("Enter another length");
         double length2 = input.nextDouble();
 
-        System.out.println("The area of the square is " + calculateAreaOfSquare(length1, length2) +"centimmeters square");
+        System.out.println("The area of the square is " + calculateAreaOfSquare(length1, length2) +"centimeters square");
     }
     public static double calculateAreaOfSquare(double length1, double length2){
         double area = length1*length2;
